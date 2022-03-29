@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 //Brogan Jowers-Wilding 1538252
-//George Elstob 
+//George Elstob 1534323
 
 public class LZW{
     public static void main(String args[])
