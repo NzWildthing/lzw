@@ -65,9 +65,17 @@ class LZWdecode{
 
         //for each digit in encoded
         for (int digit : encoded) {
-            // 
-            String entry = dictionary.containsKey(digit) ? dictionary.get(digit) : characters + characters.charAt(0);
-
+            // retirve from dictionary if possible 
+            String entry = "";
+            if ( dictionary.containsKey(digit)){
+                entry = dictionary.get(digit);
+            }
+            //else add the first letter of characters to characters and use that instead
+            else{
+                entry = characters + characters.charAt(0);
+            }
+               
+            //adds to end of decoded string
             message.append(entry);
             //adds new item to dictionary 
             dictionary.put(size++, characters + entry.charAt(0));
