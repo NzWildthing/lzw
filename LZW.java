@@ -60,8 +60,7 @@ class LZWdecode{
         //System.out.println(Arrays.asList(dictionary));
         //retrieve and remove 1st integer
         //encoded.add(0, 0);
-        String characters = String.valueOf((char) encoded.remove(0).intValue());
-        
+        String characters = Integer.toString(encoded.remove(0));
         StringBuilder message = new StringBuilder(characters);
 
         //for each digit in encoded
