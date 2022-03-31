@@ -52,13 +52,6 @@ class LZWencode{
                 phraseNumList.add(phraseNum);
             }
         }
-        System.out.println("");
-        //Prints out the encoded message i.e phrase number list
-        System.out.println(phraseNumList.toString());
-
-        
-        LZWpack packer2 = new LZWpack(trie.globalPhraseCount);
-
         return phraseNumList;
     }
 
